@@ -1,0 +1,31 @@
+@import '../../../global.less';
+.runToPurchase{
+  width: 100%;
+  .content{
+    background-color: white;
+  }
+  .address{
+    display: flex;
+    align-items: center;
+    .position{
+      flex-basis: 90%;
+      margin-left: 10px;
+      text-align: left;
+    }
+  }
+  .photo{
+    flex-basis: 10%;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url('../../../assets//images/address.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+:global{
+  .date-picker-list .am-list-item .am-list-line .am-list-extra {
+    flex-basis: initial;
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../../global.less';
+.account{
+  width: 100%;
+  background-color: @bgColor;
+  .tips{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    overflow: hidden;
+    .topTips{
+      line-height: 20px;
+      margin: 30px 0;
+      display: flex;
+      div:first-child{
+        flex-basis: 40%;
+      }
+      div:nth-child(2){
+        color: @fontPurple;
+        font-weight: normal;
+      }
+    }
+    .amount{
+      display: flex;
+      div:first-child{
+        flex-basis: 20%;
+        font-weight: normal;
+      }
+      div:nth-child(2){
+        color: @fontPurple;
+      }
+    }
+  }
+  .supMessage{
+    font-size: 32px;
+    line-height: 30px;
+    .orderID{
+      display: flex;
+      div:first-child{
+        flex: 1;
+      }
+    }
+    .supNum{
+      display: flex;
+      div{
+        flex: 1;
+      }
+      div:not(:first-child) {
+        font-weight: 600;
+      }
+    }
+  }
+  .bgColor{
+    background-color: @yzxWhite;
+  }
+  .option{
+    text-align: center;
+    // margin-top: 40px;
+    // margin-right: 20px;
+    font-size: 32px;
+    div{
+      display: inline-block;
+      width: 150px;
+      border: 0.014rem solid @fontPurple;
+      margin-left: 10px;
+      text-align: center;
+      padding: 15px 0;
+      border-radius: 15px;
+      background-color: @yzxGrey;
+      color: white;
+    }
+    .account,.sign,.evaluate{
+      background-color: @buttonColor;
+    }
+    .delete{
+      background-color: rgba(172, 172, 172, 0.5);
+    }
+  }
+}

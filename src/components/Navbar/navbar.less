@@ -1,0 +1,48 @@
+
+@import '../../global.less';
+@navbar-height: 45px;
+
+.jz-navbar{
+  display: flex;
+  align-items: center;
+  min-height:@navbar-height;
+  color: black;
+  background-color: @backgroundColor;
+
+  &-left,
+  &-title,
+  &-right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &-left {
+    justify-content: flex-start;
+    font-size: 30px;
+    white-space: nowrap;
+    padding-left: 10px;
+  }
+  &-title {
+    justify-content: center;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  &-right {
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  &-dark{
+    background-color: black;
+    color: #fff;
+  }
+  &-orange{
+    background-color: orangered;
+    color: #fff;
+  }
+  &-red{
+    background-color: @backgroundColor;
+    color: #fff;
+  }
+}

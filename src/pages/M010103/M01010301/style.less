@@ -1,0 +1,42 @@
+@import '../../../global.less';
+.market{
+  width: 100%;
+  .list{
+    width: 100%;
+    background-color: white;
+    .message{
+      display: flex;
+      align-items: center;
+      height: 100px;
+      border-bottom: 1px solid @yzxGrey;
+      .time{
+        flex-basis: 30%;
+        height: 60px;
+        background-color: @yzxGrey;
+        border-radius: 8px;
+        margin-right: 10px;
+        font-size: 28px;
+        text-align: center;
+        line-height: 25px;
+      }
+      .title{
+        flex: 1;
+        font-size: 32px;
+        line-height: 15px;
+      }
+    }
+    .describe{
+      overflow: hidden;
+      div{
+        margin: 10px 0;
+        text-indent: 40px;
+        font-size: 24px;
+        color: @yzxGrey;
+        line-height: 15px;
+      }
+    }
+  }
+  .list:not(:last-child){
+    border-bottom: 1px solid @yzxGrey;
+  }
+}

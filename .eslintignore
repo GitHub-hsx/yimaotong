@@ -1,0 +1,7 @@
+/build/
+/config/
+/dist/
+/build/mock/
+**/__tests__/
+/dlls/
+/src/utils/communicate.js

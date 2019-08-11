@@ -1,0 +1,188 @@
+@import '../../../global.less';
+.payHome{
+  width: 100%;
+  .marginBottom{
+    margin-bottom: 1.2rem;
+  }
+  .bgColor{
+    background-color: white;
+  }
+  .totalNum{
+    display: flex;
+    justify-content: space-between;
+    background-color: @yzxWhite;
+    min-height: 160px;
+    .card {
+      border-radius: 16px;
+      flex-basis: 49%;
+      width: 100%;
+      box-shadow: 0px 0px 5px @fontGrey;
+      background-image: url(../../../assets/images/background.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      .green{
+        color: @buttonColor;
+      }
+      .red{
+        color: @fontRed;
+      }
+      div:first-child{
+        font-size: 36px;
+        color: @fontBlank;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+      }
+      div:nth-child(2){
+        color: @fontBlank;
+        text-align: center;
+        margin: 20px 0;
+        span:first-child{
+          font-size: 36px;
+        }
+        span:nth-child(2) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .priceForm{
+    background-color: @yzxWhite;
+    .listContainer{
+      // box-shadow: 0 0 5px @yzxGrey;
+      // overflow: hidden;
+    }
+    .list{
+      padding-top: 20px;
+      // overflow: hidden;
+      .topMsg{
+        display: flex;
+        font-size: 28px;
+        color: @fontGrey;
+        align-items: center;
+        .topOne{
+          margin-left: 20px;
+          flex-basis: 30%;
+        }
+        .topTwo{
+          margin-left: 10px;
+          flex: 1;
+        }
+      }
+      .bottomMsg{
+        margin: 15px 0;
+        // padding-bottom: 10px;
+        display: flex;
+        color: @fontPurple;
+        align-items: center;
+        .bottomOne{
+          font-weight: 500;
+          flex-basis: 30%;
+          font-size: 30px;
+          margin-left: 20px;
+          line-height: 24px;
+        }
+        .bottomTwo{
+          margin-left: 10px;
+          font-weight: bold;
+          flex: 1;
+          font-size: 30px;
+          span:first-child{
+            margin-left: 20px;
+            display: inline-block;
+            height: 30px;
+            width: 10px;
+            background-size: 20px 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 10px;
+          }
+          span{
+            font-size: 32px;
+          }
+        }
+      .liner{
+        margin-top: 20px;
+      }
+    }
+    .buttonContainer{
+      flex-basis: 20%;
+      margin-right: 20px;
+      .button{
+        padding: 10px 0;
+        font-size: 28px;
+        border: 1px solid @buttonColor;
+        color: @buttonColor;
+        // line-height: 20px;
+        text-align: center;
+      }
+    }
+    .cutTwo{
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      .firstCut{
+        flex-basis: 80%;
+      }
+    }
+  }
+    .liner{
+      border-bottom: 0.028rem solid #dddddd;
+    }
+  }
+  .publishRender{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-size: 32px;
+    .box {
+      width: 100%;
+      position: absolute;
+      bottom:2rem;
+      text-align: center;
+      .choose,.take{
+        // position: absolute;
+        // bottom: 0;
+        margin: 0 40px;
+        display: inline-block;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        div:first-child{
+          // background-color: bisque;
+          border-radius: 1rem;
+          height: 2rem;
+          width: 2rem;
+        }
+        div:nth-child(2){
+          width:1.8rem;
+        }
+      }
+      .choose{
+        // border-radius: 1rem;
+        height: 1.7rem;
+        width: 1.7rem;
+        background-image: url(../../../assets//images/purchase.png);
+        left: 0px;
+      }
+      .take{
+        border-radius: 1rem;
+        height: 1.7rem;
+        width: 1.7rem;
+        background-image: url(../../../assets//images/supply.png);
+        right: 0px;
+      }
+    }
+  }
+}
+.loadMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: white;
+  span{
+    font-size: 32px;
+  }
+}

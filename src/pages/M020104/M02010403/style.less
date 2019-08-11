@@ -1,0 +1,36 @@
+@import '../../../global.less';
+.orderRate{
+  width: 100%;
+  background-color: @bgColor;
+  .evaluate{
+    width: 100%;
+    background-color: white;
+    .card{
+      font-size: 32px;
+      display: flex;
+      color: @fontPurple;
+      .photo {
+        flex-basis: 15%;
+        div{
+          display: inline-block;
+          text-align: center;
+          height: 80px;
+          width: 80px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-color: aqua;
+        }
+      }
+      .star{
+        flex: 1;
+        line-height: 35px;
+      }
+    }
+    textarea {
+      width: 100%;
+      font-size: 32px;
+      height: 150px;
+    }
+  }
+}

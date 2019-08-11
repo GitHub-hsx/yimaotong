@@ -1,0 +1,49 @@
+@import '../../global.less';
+@radius-md:0.3rem;
+@segmented-control-height:1rem;
+@font-size-base:15px;
+@line-height-base:1rem;
+@border-width-md:1px;
+@color-text-base-inverse:transparent;
+
+.jz-tabs{
+  display: flex;
+  overflow: hidden;
+  min-height: @segmented-control-height;
+  opacity: 1;
+  background-color: #fff;
+  border-bottom: 0.014rem solid #c7c6c6;
+  &-disabled{
+    opacity: 0.5;
+  }
+  &-item-container{
+    flex:1;
+  }
+  &-item{
+    text-align: center;
+    color: @red;
+    font-size: 32px;
+    height: 100px;
+    line-height: 0.7rem;
+    transition: background .2s;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem 0rem;
+    position: relative;
+  }
+  &-item-selected{
+    &:before{
+      content: '';
+      width: 50px;
+      height: 0;
+      border: 2px solid  @buttonColor;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.jzCard{
+    width: 100%;
+    position: relative;
+}
+.wingBlank {
+    // background-image: url(../../assets/bankManage/cardYellow.png);
+    background-size:cover;
+    width:100%;
+}
+.whiteSpace {
+    height: 28px;
+}
+.mrk{
+    width: 130px;
+    height: 130px;
+    background-image: url(../../assets/images/card.png);
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 999;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.card {
+    min-height: 96px;
+    padding-bottom: 6px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.cardHeaderContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.cardHeader {
+    -ms-flex-align: center;
+    font-size: 17px;
+    padding-left: 30px;
+}
+.cardHeaderContent {
+    text-align: left;
+    color: white;
+    font-size: 64px;
+
+}
+.cardHeaderExtra {
+    font-size: 28px;
+
+}
+.cardBody {
+    position: relative;
+    padding: 15px 15px 6px;
+    font-size: 15px;
+    color: white;
+    min-height: 40px;
+}
+
+.cardHeaderExtra {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color:white;
+    margin-top: 20px;
+    font-size: 28px;
+    div{
+        min-width: 24px;
+        padding-right:48px;
+        display: inline-block;
+        span{
+            font-size: 24px;
+        }
+    }
+}
+.cardFooterContent{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 28px;
+    color:white;
+    div{
+        display: inline-block;
+    }
+    input{
+        width: 14px;
+        background-color: transparent;
+        border: none;
+        overflow-x:visible;
+        outline: none;
+        color: white;
+    }
+    input:focus{
+        background: rgba(153, 153, 153, 0.1);
+        width: 150px;
+    }
+    .modify{
+        display: inline-block;
+        width: 22px;
+        height: 24px;
+        background-image: url(../../assets/images/pen.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+.lh{
+    padding-left: 30px;
+}
+.cardFooter {
+    font-size: 32px;
+    padding: 0 30px;
+    display: flex;
+    margin-top: 62px;
+    // margin-bottom: 18px;
+}
+.cardFooterExtra{
+    text-align: right;
+    color:white;
+    font-size: 30px;
+ }
+ .cardManage{
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      margin-left: 15px;
+      margin-right: 15px;
+      li{
+        width: 25%;
+        font-size: 24px;
+        color: #666;
+        text-align: center;
+        div{
+          width: 100%;
+          height: 24px;
+          margin-top: 28.5px;
+          margin-bottom: 28.5px;
+          border-right: 1px solid #F2F2F2;
+        }
+      }
+      li:nth-child(4){
+        div{
+          border:none;
+        }
+        span{
+          display: block;
+          transform:rotate(90deg) translateY(-50%);
+          display: inline-block;
+          width: 12px;
+          height: 19.4px;
+          background-image: url(../../assets/images/arrow.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+      }
+      li:nth-child(9){
+        div{
+          border:none;
+        }
+        span{
+          transform:rotate(-90deg) translateY(50%);
+          display: inline-block;
+          width: 12px;
+          height: 19.4px;
+          background-image: url(../../assets/images/arrow.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+      }
+    }
+  }

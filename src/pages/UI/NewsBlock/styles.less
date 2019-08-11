@@ -1,0 +1,66 @@
+@import '../../../global.less';
+.newBlock{
+  // background-color: white;
+  &-news{
+    border-bottom: 1px solid @fontGrey;
+  }
+  &-collect{
+    margin-bottom: 20px;
+  }
+  .style_one{
+    background-color: white;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .messageContent{
+      flex-basis: 65%;
+      margin: 40px 0;
+      width: 100%;
+      .time{
+        margin-top: 20px;
+        color: @fontGrey;
+        font-size: 24px;
+        .timeSecond{
+          margin-left: 20px;
+        }
+      }
+    }
+    .picture{
+      flex-basis: 40%;
+      text-align: left;
+      margin-right: 0.4rem;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      height: 180px;
+    }
+  }
+  .style_two{
+    background-color: white;
+    padding: 20px 0;
+   .pictureContent{
+     display: flex;
+     justify-content: space-between;
+     div{
+       margin-top: 10px;
+       text-align: center;
+       height: 120px;
+       width: 32.8%;
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       border-radius: 8px;
+     }
+   }
+   .time{
+    margin-top: 10px;
+    color: @fontGrey;
+    font-size: 24px;
+    span:last-child{
+      margin-left: 20px;
+    }
+   }
+  }
+}

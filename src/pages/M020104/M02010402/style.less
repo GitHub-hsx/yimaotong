@@ -1,0 +1,127 @@
+@import '../../../global.less';
+.myOrder{
+  width: 100%;
+  background-color: white;
+  position: relative;
+  .tab{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .contain{
+    margin-top: 1.4rem;
+  }
+  .listContainer{
+    overflow: hidden;
+    width: 100%;
+    font-size: 32px;
+    .block{
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: @bgColor;
+      padding: 40px 0;
+      .display{
+        // font-size: 28px;
+        display: flex;
+        align-items: center;
+      }
+      .one{
+        margin: 20px 20px;
+        div:first-child{
+          flex-basis: 75%;
+          width: auto;
+          text-align: left;
+        }
+        div:nth-child(2) {
+          flex-basis: 30%;
+          text-align: right;
+          .lastTime{
+            color: @fontRed;
+          }
+        }
+      }
+      .two{
+        margin: 20px 20px;
+        div:first-child{
+          flex-basis: 20%;
+          width: auto;
+          text-align: left;
+        }
+        div:nth-child(2) {
+          text-align: right;
+          .lastTime{
+            color: @fontRed;
+          }
+        }
+      }
+      .Information{
+        display: flex;
+        // align-items: center;
+      }
+      .picture{
+        flex-basis: 20%; 
+        .photo{
+          transform: translateX(50%);
+          height: 60px;
+          width: 60px;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .message {
+      flex-basis: 80%;
+      .party{
+        margin-top: 20px;
+        display: flex;
+        div{
+          flex: 1;
+        }
+      }
+      .thirdParty{
+        display: flex;
+        margin-top: 20px;
+        div:first-child{
+          flex-basis: 20%;
+        }
+      }
+    }
+    .optionEvaluate{
+      margin-top: 10px !important;
+    }
+    .option{
+      text-align: right;
+      margin-top: 40px;
+      margin-right: 20px;
+      div{
+        display: inline-block;
+        width: 150px;
+        border: 0.014rem solid @fontPurple;
+        margin-left: 10px;
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 15px;
+        background-color: @yzxGrey;
+        color: white;
+      }
+      .account,.sign,.evaluate{
+        background-color: @buttonColor;
+      }
+      .delete{
+        background-color: rgba(172, 172, 172, 0.5);
+      }
+    }
+  }
+  .loadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: white;
+    margin-bottom: 1.34rem;
+    font-size: 32px;
+  }
+}

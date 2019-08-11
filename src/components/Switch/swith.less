@@ -1,0 +1,108 @@
+
+@import "../../global.less";
+
+.am-list-extra {
+    color: #888;
+    text-align: right;
+    display: block;
+    outline: none;
+
+.am-list-item .am-list-line .am-list-content, .am-list-item .am-list-line .am-list-extra {
+    line-height: 1.5;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.am-switch, .am-switch .checkbox {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.am-switch {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.am-switch input[type=checkbox] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border: 0 none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.am-switch-green-input input[type=checkbox]:checked+.checkbox {
+    background: #4dd865;
+}
+.am-switch-red-input input[type=checkbox]:checked+.checkbox {
+    background: #EF272D;
+}
+
+.am-switch .checkbox {
+    width: 70px;
+    height: 42px;
+    border-radius: 31px;
+    background: #e5e5e5;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.am-switch, .am-switch .checkbox {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+.am-switch input[type=checkbox]:checked+.checkbox:before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.am-switch .checkbox:after, .am-switch .checkbox:before {
+    content: " ";
+    position: absolute;
+    left: 1.5px;
+    height: 42px;
+    border-radius: 20px;
+    background: #fff;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border:0px;
+}
+.am-switch input[type=checkbox]:checked+.checkbox:after {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+}
+
+.am-switch .checkbox:after {
+    width: 40px;
+    z-index: 2;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+*, :after, :before {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline-offset: 0px;
+}
+}

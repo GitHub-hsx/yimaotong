@@ -1,0 +1,40 @@
+@import '../../../global.less';
+.collect{
+  width: 100%;
+  position: relative;
+  .liItem {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: white;
+    span{
+      font-size: 32px;
+    }
+  }
+  .videoContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    // justify-content: space-between;
+    overflow: hidden;
+  }
+  .App{
+    margin-top: 1.5rem;
+    overflow: hidden;
+  }
+}
+.tab{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}

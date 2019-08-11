@@ -1,0 +1,66 @@
+@import '../../../global.less';
+.comment{
+  width: 100%;
+  height: 100%;
+  background: white;
+  .list{
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .message{
+      flex-basis: 70%;
+      display: flex;
+      margin-top: 20px;
+      .photo{
+        flex-basis: 16%;
+        align-self: flex-start;
+        width: 100px;
+        height: 100px;
+        div{
+          border-radius: 50px;
+          height: 100px;
+          width: 100px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      .describe{
+        min-height: 270px;
+        margin-left: 25px;
+        .name{
+          font-size: 32px;
+        }
+        div:not(:first-child) {
+          color: @fontGrey;
+          font-size: 28px;
+          margin-top: 20px;
+        }
+      }
+    }
+    .video{
+      text-align: right;
+      flex: 1;
+      height: 270px;
+      div{
+        display: inline-block;
+        width: 230px;
+        height: 250px;
+        background-size: over;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  .loadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: white;
+    span{
+      font-size: 32px;
+    }
+  }
+}

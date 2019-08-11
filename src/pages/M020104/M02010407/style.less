@@ -1,0 +1,20 @@
+@import '../../../global.less';
+.transportStatus{
+  width: 100%;
+  background-color: @bgColor;
+  .description{
+    display: flex;
+    justify-content: space-between;
+    div:first-child{
+      flex-basis: 1;
+    }
+    div:nth-child(2){
+      flex-basis: 30%;
+      background-color: @buttonColor;
+      height: 50px;
+      width: 70px;
+      text-align: center;
+      border-radius: 12px;
+    }
+  }
+}

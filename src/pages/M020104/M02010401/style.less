@@ -1,0 +1,67 @@
+@import '../../../global.less';
+.payPersonal{
+  width: 100%;
+  // background-color: white;
+  position: relative;
+  .personal{
+    background-color: white;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.028rem solid #dddddd;
+    .photo{
+      flex-basis: 30%;
+      text-align: center;
+      div{
+        margin-left: 40px;
+        height: 120px;
+        width: 120px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+      }
+    }
+    .introduction{
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      .basic{
+        div{
+          margin-bottom: 20px;
+        }
+        .name{
+          color: @fontPurple;
+          font-size: 36px;
+          font-weight: bolder;
+        }
+        div:not(:first-child) {
+          font-size: 24px;
+          color: @fontGrey;
+        }
+      }
+      .arrow{
+        flex-basis: 10%;
+        height: 60px;
+        text-align: right;
+        img{
+          height: 40px;
+          align-self: center;
+        }
+      }
+    }
+  }
+  .tabBar{
+    position: relative;
+    min-height: 100px;
+    padding-bottom: 20px;
+    background: white;
+    // overflow: hidden;
+  }
+  .listItem{
+    background: white;
+  }
+}

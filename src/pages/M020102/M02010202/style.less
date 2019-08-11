@@ -1,0 +1,62 @@
+@import '../../../global.less';
+.evaluate{
+  width: 100%;
+  // background-color: white;
+  position: relative;
+  font-size: 32px;
+  line-height: 28px;
+  .list{
+    background-color: white;
+    .content{
+      margin-bottom: 40px;
+      .line{
+        display: flex;
+        font-size: 32px;
+        // align-items: center;
+        justify-content: space-between;
+        line-height: 20px;
+        .left{
+          margin: 10px 0;
+          flex: 1;
+          // width: 30%;
+          
+
+        }
+        .right{
+          flex-basis: 50%;
+          margin: 10px 0;
+          text-align: left; 
+          width: 50%;  
+          margin-left: 40px;   
+        }
+        .button{
+          background-color: @buttonColor;
+          width: 100px;
+          padding: 10px 0;
+          text-align: center;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .centerBar{
+    background-color: white;
+    display: flex;
+    .photo{
+      flex-basis: 30%;
+    }
+    .content{
+      flex: 1;
+    }
+  }
+}
+.loadMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: white;
+  span{
+    font-size: 32px;
+  }
+}

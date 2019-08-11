@@ -1,0 +1,56 @@
+@import '../../../global.less';
+.personalMessage{
+  width: 100%;
+  background: white;
+  .personal{
+    // min-height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.028rem solid #dddddd;
+    .photo{
+      flex-basis: 30%;
+      text-align: center;
+      .bgPhoto{
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+    .introduction{
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      .basic{
+        padding: 10px 0;
+        div{
+          margin-bottom: 20px;
+        }
+        .name{
+          color: @fontPurple;
+          font-size: 36px;
+          font-weight: bolder;
+        }
+        div:not(:first-child) {
+          font-size: 24px;
+          color: @fontGrey;
+        }
+      }
+      .arrow{
+        flex-basis: 10%;
+        height: 60px;
+        text-align: right;
+        img{
+          height: 40px;
+          align-self: center;
+        }
+      }
+    }
+  }
+}

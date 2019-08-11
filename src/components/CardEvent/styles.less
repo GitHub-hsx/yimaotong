@@ -1,0 +1,67 @@
+.cardManage{
+  width: 100%;
+  border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 15px;
+    li{
+      width: 25%;
+      font-size: 24px;
+      text-align: center;
+      div{
+        width: 100%;
+        height: 24px;
+        margin-top: 28.5px;
+        margin-bottom: 28.5px;
+        border-right: 1px solid #F2F2F2;
+        color: #666;
+
+      }
+      .noJump {
+        width: 100%;
+        height: 24px;
+        margin-top: 28.5px;
+        margin-bottom: 28.5px;
+        border-right: 1px solid #F2F2F2;
+        color: #cccccc;
+      }
+    }
+    li:nth-child(4){
+      div{
+        border:none;
+      }
+      span{
+        display: block;
+        transform:rotate(90deg) translateY(-50%);
+        display: inline-block;
+        width: 12px;
+        height: 19.4px;
+        background-image: url(../../assets/images/arrow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+    li:nth-child(9){
+      div{
+        border:none;
+      }
+      span{
+        transform:rotate(-90deg) translateY(50%);
+        display: inline-block;
+        width: 12px;
+        height: 19.4px;
+        background-image: url(../../assets/images/arrow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
+}
